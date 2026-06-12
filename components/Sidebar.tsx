@@ -22,13 +22,13 @@ export default function Sidebar() {
       <nav className="flex flex-col space-y-2">
         {navItems.map(item => (
           <Link key={item.href} href={item.href}>
-            <a
+    
               className={`px-4 py-2 rounded hover:bg-terracotta-600 transition-colors ${
                 router.pathname === item.href ? 'bg-terracotta-500' : ''
               }`}
             >
               {item.name}
-            </a>
+            
           </Link>
         ))}
       </nav>
